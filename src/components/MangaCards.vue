@@ -5,7 +5,12 @@
     :gutter-height="8"
     monitor-images-loaded
   >
-    <StackItem v-for="manga in mangas" :key="manga.i" class="img-container">
+    <StackItem
+      v-for="manga in mangas"
+      :key="manga.i"
+      class="img-container"
+      style="transition: transform 300ms"
+    >
       <MangaCard :manga="manga"></MangaCard>
     </StackItem>
   </Stack>
